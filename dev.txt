@@ -1,0 +1,13 @@
+[Palette]
+
+#C78505
+#4A412F
+#946404
+#D0941B
+#473002
+
+[Linking]
+Music Notation icon by icons8
+<a target="_blank" href="https://icons8.com/icon/IaTKnJHJgFJh/music-notation">Music Notation</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+
