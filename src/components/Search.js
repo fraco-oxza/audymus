@@ -3,23 +3,31 @@ import { useState } from "react";
 
 function Search() {
   return (
-    <div class="search">
+    <div className="search">
       <div
-        class="icon"
+        className="icon"
         onClick={() => {
           const search = document.querySelector(".search");
           search.classList.toggle("active");
         }}
       ></div>
-      <div class="input">
+      <div className="input">
         <input
           type="text"
           placeholder="Buscar en el mundo"
+          onChange={() => {
+            let content = document.getElementById("mysearch").value;
+            let pirn = () => {
+              console.log(content);
+            };
+
+            setTimeout(pirn, 2000);
+          }}
           id="mysearch"
         ></input>
       </div>
       <span
-        class="clear"
+        className="clear"
         onClick={() => {
           document.getElementById("mysearch").value = "";
         }}

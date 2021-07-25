@@ -1,51 +1,59 @@
 #main-bar {
-    background-color: #141414;
-    
-    height: 50px;
-    width: calc(100% - 10px);
+  background-color: #141414;
 
-    margin: 5px;
+  height: 50px;
+  width: calc(100% - 10px);
 
-    border-radius: 8px;
+  margin: 5px;
 
-    display: grid;
+  border-radius: 8px;
 
-    align-items: center;
-    justify-items: end;
+  display: grid;
 
+  align-items: center;
+  justify-items: end;
 
-    grid-template-columns: 180px 1fr;
-    grid-template-rows: 50px;
+  grid-template-columns: 180px 1fr;
+  grid-template-rows: 50px;
 }
 
 #main-logo {
-    width: 100%;
-    height: 100%;
-    
-    display: grid;
+  width: 100%;
+  height: 100%;
 
-    align-items: center;
-    
-    text-decoration: none;
-    grid-template-columns: 55px 1fr;
-    grid-template-rows: 100%;
+  display: grid;
+
+  align-items: center;
+
+  text-decoration: none;
+  grid-template-columns: 55px 1fr;
+  grid-template-rows: 100%;
 }
 
 #main-logo:hover {
-    transition: 500ms 10ms;
-    transform: scale(1.02);
+  transition: 500ms 10ms;
+  transform: scale(1.02);
 }
 
 #main-logo span {
-    justify-self: start;
-    color: #C78505;
-    font-family: "Gemunu Libre ExtraBold";
-    font-size: 30px;
-    transform: translateY(1px);
-    text-shadow: 1px 1px rgba(52,52,52,0.9); 
+  justify-self: start;
+  color: #c78505;
+  font-family: "Gemunu Libre ExtraBold";
+  font-size: 30px;
+  transform: translateY(1px);
+  text-shadow: 1px 1px rgba(52, 52, 52, 0.9);
 }
 
 #main-logo img {
-    justify-self: center;
-    height: 90%;
+  justify-self: center;
+  height: 90%;
+}
+
+@media screen and (max-width: 560px) {
+  #main-logo span {
+    display: none;
+  }
+  #main-bar {
+    grid-template-columns: 50px 1fr;
+  }
 }
