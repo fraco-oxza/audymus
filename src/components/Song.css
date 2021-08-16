@@ -1,0 +1,44 @@
+.song {
+  position: relative;
+  display: block;
+
+  border-radius: 8px;
+
+  background-color: #141414;
+  /* height: 200px; */
+  width: 100%;
+  transition: 0s, 0.5s;
+}
+
+.song:hover {
+  transform: scale(1.05);
+  /* background-color: #646464; */
+}
+
+.song a {
+  display: block;
+
+  /* text-decoration: none; */
+  height: 100%;
+  width: 100%;
+}
+
+.song span {
+  position: absolute;
+  display: inline-block;
+  padding-top: 10px;
+  height: 15%;
+  font-size: 16px;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  font-family: "Gemunu Libre ExtraBold";
+  color: #f0f0f0;
+}
+
+.song img {
+  /* position: absolute; */
+  /* width: 90%; */
+  padding-top: 20px;
+  height: 73%;
+}

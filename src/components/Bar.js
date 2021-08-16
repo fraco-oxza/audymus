@@ -7,8 +7,8 @@ import Search from "./Search";
 function Bar() {
   return (
     <div id="main-bar">
-      <a id="main-logo" href="#">
-        <img id="image" src={music_notation} />
+      <a id="main-logo" href="/">
+        <img id="image" alt="Audymus logo" src={music_notation} />
         <span id="text">Audymus</span>
       </a>
       <Search />

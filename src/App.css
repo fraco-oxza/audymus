@@ -1,5 +1,5 @@
 body {
-    background-color: #232323;
+  background-color: #232323;
 }
 
 .App {
@@ -7,8 +7,8 @@ body {
 }
 
 @font-face {
-    font-family: "Gemunu Libre ExtraBold";
-    src: url("./fonts/gemunu-libre.extrabold.ttf");
+  font-family: "Gemunu Libre ExtraBold";
+  src: url("./fonts/gemunu-libre.extrabold.ttf");
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");

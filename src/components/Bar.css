@@ -1,13 +1,20 @@
 #main-bar {
   background-color: #141414;
 
+  z-index: 10;
+
   height: 50px;
-  width: calc(100% - 10px);
+  width: calc(100% - 20px);
+
+  border-color: #c78505;
+  border-style: solid;
+  border-width: 2px;
 
   margin: 5px;
 
   border-radius: 8px;
 
+  position: fixed;
   display: grid;
 
   align-items: center;

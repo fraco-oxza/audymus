@@ -1,0 +1,16 @@
+#songs_container {
+  padding-top: 70px;
+  position: relative;
+
+  width: calc(100% - 20px);
+  margin: auto;
+
+  justify-content: center;
+  justify-items: center;
+
+  display: grid;
+  gap: 15px;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  /* overflow: hidden; */
+}
