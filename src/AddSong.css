@@ -1,5 +1,5 @@
 #add-menu-active {
-  display: block;
+  display: grid;
   position: fixed;
 
   top: 0;
@@ -61,4 +61,52 @@
 #song_container {
   width: 200px;
   height: 300px;
+}
+
+#addSongContainer {
+  transition: 2s 2s;
+  background-color: #141414;
+  border: 2px solid #c78505;
+  text-align: left;
+  display: inline-block;
+  /* height: 200px; */
+  padding: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  /* width: 500px; */
+  /* max-width: 80%; */
+  margin: auto;
+  border-radius: 8px;
+}
+
+#addSongContainer label {
+  color: #c0c0c0;
+  font-family: "Gemunu Libre ExtraBold";
+}
+
+#addSongContainer #submit {
+  background-color: #c78505;
+  font-family: "Gemunu Libre ExtraBold";
+  font-size: 20px;
+  color: #e0e0e0;
+  margin-top: 10px;
+  border: none;
+  height: 40px;
+  width: 250px;
+}
+
+#addSongContainer input {
+  border: none;
+  height: 25px;
+  width: 242px;
+
+  padding: 4px;
+
+  border-radius: 5px;
+
+  margin-bottom: 10px;
+  margin-top: 5px;
+
+  background-color: #343434;
+  color: #e0e0e0;
 }

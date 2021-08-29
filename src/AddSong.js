@@ -2,8 +2,6 @@ import "./AddSong.css";
 import { Component } from "react";
 import axios from "axios";
 
-import Song from "./components/Song";
-
 class AddSong extends Component {
   constructor(props) {
     super(props);
@@ -26,6 +24,7 @@ class AddSong extends Component {
       link: this.state.song_link,
       image: this.state.song_image,
     };
+    this.toggle_menu();
     axios
       .post("https://api.audymus.ml/songs", new_song)
       .then((res) => window.location.reload());
@@ -66,7 +65,7 @@ class AddSong extends Component {
           >
             X
           </button>
-          <div>
+          <div id="addSongContainer">
             <form onSubmit={this.handleSubmit}>
               <label>
                 Nombre de la canción
@@ -75,6 +74,8 @@ class AddSong extends Component {
                   type="text"
                   id="song_name"
                   name="song_name"
+                  maxLength={50}
+                  required={true}
                   value={this.state.song_name}
                   onChange={this.handleChangeName}
                 />
@@ -82,10 +83,12 @@ class AddSong extends Component {
               <br />
               <label>
                 Link de la imagen
+                <br />
                 <input
-                  type="text"
+                  required={false}
                   id="song_image"
                   name="song_image"
+                  type="link"
                   value={this.state.song_image}
                   onChange={this.handleChangeImage}
                 />
@@ -93,16 +96,25 @@ class AddSong extends Component {
               <br />
               <label>
                 Link de la canción
+                <br />
                 <input
-                  type="text"
+                  required={true}
                   id="song_link"
                   name="song_link"
+                  type="link"
                   value={this.state.song_link}
                   onChange={this.handleChangeLink}
                 />
               </label>
-              <input type="submit" value="Submit" />
+              <br />
+              <input
+                id="submit"
+                className="clickeable"
+                type="submit"
+                value="Añadir Canción"
+              />
             </form>
+            {/*
             <div id="song_container">
               <Song
                 key="0"
@@ -110,7 +122,7 @@ class AddSong extends Component {
                 link={this.state.song_link}
                 image={this.state.song_image}
               />
-            </div>
+            </div>*/}
           </div>
         </div>
       </div>
