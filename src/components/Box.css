@@ -1,0 +1,41 @@
+.box {
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  height: 100%;
+  width: 100%;
+  color: #c0c0c0;
+  box-sizing: border-box;
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+.box .box-header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 80px;
+  align-items: center;
+  overflow: hidden;
+}
+
+.box .box-header img {
+  justify-self: center;
+  max-width: 80%;
+  height: auto;
+  display: inline;
+}
+
+.box .box-header span {
+  margin-left: 6px;
+  display: inline;
+  font-family: "Gemunu Libre ExtraBold";
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.box p {
+  text-align: left;
+  margin: 0 10px;
+  font-size: 20px;
+  font-family: "Roboto";
+}
