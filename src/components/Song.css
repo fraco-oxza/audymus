@@ -43,4 +43,6 @@
   /* padding-top: 20px; */
   border-radius: 10px;
   height: 170px;
+  width: 170px;
+  object-fit: cover;
 }
