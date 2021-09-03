@@ -7,8 +7,6 @@ import music_notation from "../components/icons/icons8-music-notation-96.png";
 import music_girl from "../illustrations/clip-955.png";
 
 function Index() {
-  let linkStyle = { textDecoration: "none" };
-
   return (
     <div>
       <ul id="menu">

@@ -43,7 +43,6 @@ class AddSong extends Component {
   };
 
   toggle_menu = () => {
-    console.log("You click me");
     this.setState({ active: !this.state.active });
   };
 

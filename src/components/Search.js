@@ -1,7 +1,8 @@
 import "./Search.css";
-// import { useState } from "react";
+import { useState } from "react";
 
 function Search() {
+  const [searchStr, setSearchStr] = useState("");
   return (
     <div className="search">
       <div
@@ -9,27 +10,28 @@ function Search() {
         onClick={() => {
           const search = document.querySelector(".search");
           search.classList.toggle("active");
+          setTimeout(() => {
+            if (search.classList.contains("active")) {
+              document.getElementById("mysearch").focus();
+            }
+          }, 100);
         }}
       ></div>
       <div className="input">
         <input
           type="text"
           placeholder="Buscar en el mundo"
-          onChange={() => {
-            let content = document.getElementById("mysearch").value;
-            let pirn = () => {
-              console.log(content);
-            };
-
-            setTimeout(pirn, 2000);
-          }}
           id="mysearch"
+          value={searchStr}
+          onChange={(event) => {
+            setSearchStr(event.target.value);
+          }}
         ></input>
       </div>
       <span
         className="clear"
         onClick={() => {
-          document.getElementById("mysearch").value = "";
+          setSearchStr("");
         }}
       />
     </div>
