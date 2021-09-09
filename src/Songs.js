@@ -25,6 +25,7 @@ class Songs extends Component {
   };
 
   componentDidMount() {
+    fetch("https://api.audymus.ml/").then();
     fetch("https://api.audymus.ml/songs").then((songs) =>
       songs.json().then((x) => this.setState({ songs: x }))
     );
