@@ -42,6 +42,11 @@ function Index() {
       </div>
       <div style={{ height: "420px", width: "100%" }}></div>
 
+      <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6989713464302987"
+        crossorigin="anonymous"
+      ></script>
       <h2 className="subtitle" style={{ marginLeft: "2.5%" }}>
         Objetivos de Audymus
       </h2>
