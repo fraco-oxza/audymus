@@ -45,7 +45,7 @@ function Index() {
       <script
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6989713464302987"
-        crossorigin="anonymous"
+        crossOrigin="anonymous"
       ></script>
       <h2 className="subtitle" style={{ marginLeft: "2.5%" }}>
         Objetivos de Audymus
