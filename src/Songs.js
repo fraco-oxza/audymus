@@ -1,4 +1,5 @@
 import { Component } from "react";
+import React from "react";
 import "./Songs.css";
 
 import Song from "./components/Song";
